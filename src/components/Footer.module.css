@@ -1,0 +1,15 @@
+.footer {
+  background-color: #474745;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  max-height: 60px;
+  padding: 15px 0;
+  color: #fff;
+  max-width: 100%;
+  font-style: italic;
+  text-transform: capitalize;
+}
+.love {
+  color: crimson;
+}
