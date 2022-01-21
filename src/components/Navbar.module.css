@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .header {
   display: flex;
@@ -32,9 +33,9 @@
   color: crimson;
   transition: all 0.3s ease-in;
 }
-.logo img{
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 50%;
-    cursor: pointer;
+.logo img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
 }

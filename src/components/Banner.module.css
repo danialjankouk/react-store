@@ -1,0 +1,21 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.bannerContainer img {
+  width: 213.5vh;
+  max-height: 150vh;
+}
+.bannerContainer h1 {
+  position: relative;
+  bottom: 57rem;
+  left: 5rem;
+  font-size: 6rem;
+  color: #474745;
+}
+.bannerContainer p{
+    position: relative;
+    bottom: 55rem;
+    left: 5rem;
+    font-size: 3rem;
+    color: crimson;
+}
