@@ -13,14 +13,14 @@
 }
 .imgProduct {
   background-color: #fff;
+  
 }
 .product h1 {
   padding: 5px;
 }
 .price {
-  font-size: 20px;
   background-color: crimson;
-  width: 35px;
+  width: fit-content;
   padding: 2px;
   position: relative;
   top: 20px;
@@ -44,8 +44,8 @@
   position: relative;
   left: 2px;
   background-color: crimson;
-  width: 15px;
-  padding: 0 0 0 7px;
+  width: fit-content;
+  padding: 0 10px 0 10px;
   border-radius: 3px;
   color: white;
 }
