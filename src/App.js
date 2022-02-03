@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import Landing from "./components/Landing";
 import ProductsApi from "./components/ProductsApi";
+import About from "./components/About";
 class App extends Component {
   render() {
     return (
@@ -12,6 +13,7 @@ class App extends Component {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/products" element={<ProductsApi />} />
+          <Route path="/about" element={<About/>}/>
         </Routes>
         <Footer />
       </div>
