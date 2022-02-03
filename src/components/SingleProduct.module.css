@@ -34,18 +34,20 @@
 .downArrow {
   cursor: pointer;
   font-size: 2rem;
-  background-color: #fff;
   border-radius: 50px;
   margin: 5px;
   position: relative;
-  right: 3px;
+  right: 5px;
 }
 .count {
   position: relative;
-  left: 2px;
   background-color: crimson;
   width: fit-content;
   padding: 0 10px 0 10px;
   border-radius: 3px;
   color: white;
+  bottom: 1px;
+}
+.opacit{
+  opacity: 0.3;
 }

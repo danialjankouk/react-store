@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Styles from "./SingleProduct.module.css";
-import Iphone11 from "../images/iphone11.jpg";
 import up from "../images/up.svg";
 import down from "../images/down.svg";
 class SingleProduct extends Component {
@@ -47,6 +46,7 @@ class SingleProduct extends Component {
             alt="down arrow"
             onClick={this.downHandler}
             className={Styles.downArrow}
+            className={!this.state.count ? Styles.opacit: ''}
           />
         </div>
       </div>
