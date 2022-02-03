@@ -1,0 +1,23 @@
+.container{
+    background-color:#bb6c65;
+    max-width: 100%;
+    padding: 90px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 0;
+}
+.container h1{
+   font-size: 4rem;
+    font-weight: bold;
+    color:#474745 ;
+}
+.container input{
+    font-size: 2rem;
+    border-radius: 5px;
+    box-shadow: 5px 3px 3px #474745;
+    border: none;
+}
+.container input::placeholder{
+   font-size: 1.25rem;
+}

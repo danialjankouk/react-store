@@ -39,7 +39,7 @@ class ProductsApi extends Component {
               />
             ))
           ) : (
-            <img src={Loading} style={{width:'400px',height:"500px"}}/>
+            <img src={Loading} style={{width:'400px',height:"500px"}} alt="loading"/>
           )}
         </div>
       </>
