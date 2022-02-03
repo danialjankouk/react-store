@@ -10,43 +10,37 @@ class SingleProduct extends Component {
     };
   }
   upHandler = () => {
-    this.setState((prevState) => ({
-      count: prevState.count + 1,
+    this.setState((preveState) => ({
+      count: preveState.count + 1,
     }));
   };
   downHandler = () => {
     if (this.state.count >= 1) {
-      this.setState((prevState) => ({
-        count: prevState.count - 1,
+      this.setState((preveState) => ({
+        count: preveState.count - 1,
       }));
     }
   };
   render() {
-    const { count } = this.state;
     const { name, price, image } = this.props;
+    const { count } = this.state;
+
     return (
-      <div className={Styles.product}>
-        <div className={Styles.imgProduct}>
-          <img src={image} alt="phone" />
-        </div>
-        <h1>{name}</h1>
-        <p className={Styles.price}>
-          {price} {count ? "=>" : ""} {count ? `${count * Number(price.split(" ")[0])} $` : ""}
+      <div className={Styles.container}>
+        <img src={image} alt="smart phone" />
+        <h3>{name}</h3>
+        <p>
+          {price}{" "}
+          {count ? `* ${count} = ${count * Number(price.split(" ")[0])} $` : ""}
         </p>
         <div className={Styles.counter}>
+          <img alt="up arrow" src={up} onClick={this.upHandler} />
+          <span>{count}</span>
           <img
-            src={up}
-            alt="up arrow"
-            onClick={this.upHandler}
-            className={Styles.upArrow}
-          />
-          <p className={Styles.count}>{count}</p>
-          <img
-            src={down}
             alt="down arrow"
+            src={down}
             onClick={this.downHandler}
-            className={Styles.downArrow}
-            className={!this.state.count ? Styles.opacit: ''}
+            className={!this.state.count ? Styles.deactive : ""}
           />
         </div>
       </div>
