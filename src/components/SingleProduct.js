@@ -24,10 +24,9 @@ class SingleProduct extends Component {
   render() {
     const { name, price, image } = this.props;
     const { count } = this.state;
-
     return (
       <div className={Styles.container}>
-        <img src={image} alt="smart phone" />
+        <img src={image} className={ Styles.productimg} alt="product" />
         <h3>{name}</h3>
         <p>
           {price}{" "}
