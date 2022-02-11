@@ -5,6 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import Landing from "./components/Landing";
 import ProductsApi from "./components/ProductsApi";
 import About from "./components/About";
+import Cart from "./components/shared/Cart";
+import ProductDetail from "./components/ProductDetail";
 class App extends Component {
   render() {
     return (
@@ -13,7 +15,9 @@ class App extends Component {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/products" element={<ProductsApi />} />
-          <Route path="/about" element={<About/>}/>
+          <Route path="/about" element={<About />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/products/:id" element={<ProductDetail/> }/>
         </Routes>
         <Footer />
       </div>

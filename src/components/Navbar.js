@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Styles from "../components/Navbar.module.css";
 import { Link } from "react-router-dom";
 import LogoNav from "../images/logo.jpg";
+import ShopIcon from "../images/shop.svg"
 class Navbar extends Component {
   render() {
     return (
@@ -21,6 +22,7 @@ class Navbar extends Component {
         </div>
         <div className={Styles.logo}>
           <img src={LogoNav} alt="logo" />
+          <Link to="/cart"><img src={ShopIcon} alt="shop basket" /></Link>
         </div>
       </header>
     );
