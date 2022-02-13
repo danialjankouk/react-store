@@ -1,28 +1,29 @@
-import React, { Component } from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import { Routes, Route } from "react-router-dom";
-import Landing from "./components/Landing";
-import ProductsApi from "./components/ProductsApi";
-import About from "./components/About";
-import Cart from "./components/shared/Cart";
-import ProductDetail from "./components/ProductDetail";
-class App extends Component {
-  render() {
-    return (
-      <div>
+import './App.css';
+import { Route, Routes } from "react-router-dom";
+
+// Components
+import Store from './components/Store';
+import ProductDetails from './components/ProductDetails';
+import Navbar from './components/shared/Navbar';
+import ShopCart from './components/ShopCart';
+
+// Context
+import ProductContextProvider from './context/ProductContextProvider';
+import CartContextProvider from './context/CartContextProvider';
+
+function App() {
+  return (
+    <ProductContextProvider>
+      <CartContextProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/products" element={<ProductsApi />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/products/:id" element={<ProductDetail/> }/>
+          <Route path="/products/:id" element={<ProductDetails/>} />
+          <Route path="/products" element={<Store/>} />
+          <Route path="/cart" element={<ShopCart/>} />
         </Routes>
-        <Footer />
-      </div>
-    );
-  }
+      </CartContextProvider>
+    </ProductContextProvider>
+  );
 }
 
 export default App;
