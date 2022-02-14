@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,Navigate } from "react-router-dom";
 
 // Components
 import Store from './components/Store';
@@ -9,6 +9,7 @@ import ShopCart from './components/ShopCart';
 import About from "./components/About"
 import Landing from "./components/Landing"
 import Footer from "./components/Footer"
+import Notefound from './components/Notefound';
 // Context
 import ProductContextProvider from './context/ProductContextProvider';
 import CartContextProvider from './context/CartContextProvider';
@@ -24,6 +25,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/cart" element={<ShopCart />} />
           <Route path="/" element={<Landing />} />
+          <Route path="/*" element={<Navigate to="/notfound" />} />
+          <Route path="/notfound" element={<Notefound />} />
         </Routes>
         <Footer />
       </CartContextProvider>

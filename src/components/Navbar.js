@@ -23,8 +23,8 @@ const Navbar =()=> {
         </div>
         <div className={Styles.logo}>
           <img src={LogoNav} alt="logo" />
-          <Link to="/cart"><img src={ShopIcon} alt="shop basket" /></Link>
-          <span>{state.itemsCounter}</span>
+          <Link to="/cart"><img src={ShopIcon} alt="shop basket" className={ Styles.shop}/></Link>
+          <span className={Styles.shopCount}>{state.itemsCounter}</span>
         </div>
       </header>
     );

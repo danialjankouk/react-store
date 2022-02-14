@@ -8,7 +8,7 @@ class Landing extends Component {
     return (
       <div>
         <Banner />
-        {/* <SingleProducts /> */}
+        <SingleProducts />
         <Searchbar />
         <About />
       </div>

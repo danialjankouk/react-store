@@ -1,0 +1,20 @@
+.container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: white;
+ min-height: 100vh;
+ flex: row;
+ flex-direction: column;
+ font-size: 2rem;
+}
+.number{
+    color: #3C3C3C;
+}
+.container button{
+    border:none;
+    background-color: #3C3C3C;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}

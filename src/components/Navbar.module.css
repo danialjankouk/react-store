@@ -39,3 +39,10 @@
   border-radius: 50%;
   cursor: pointer;
 }
+.shop{
+  padding-left: 20px;
+}
+.shopCount{
+  color: #34a853;
+  font-weight: bold;
+}
