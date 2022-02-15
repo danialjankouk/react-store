@@ -3,10 +3,11 @@ import Banner from "./Banner";
 import Searchbar from "./Searchbar";
 import SingleProducts from "./SingleProduct"
 import About from "./About";
+import styles from "./Landing.module.css"
 class Landing extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.container}>
         <Banner />
         <SingleProducts />
         <Searchbar />

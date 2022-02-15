@@ -1,13 +1,15 @@
 import React from 'react';
-import Store from "./Store"
-const SingleProduct = ({productId}) => {
-    if (productId < 4) {
-        <div>
-            <Store/>
+import Store from './Store';
+import styles from "./SingleProduct.module.css";
+const SingleProduct = () => {
+
+    return (
+      <>
+        <div className={styles.container}>
+          <Store />
         </div>
-    } else {
-        return <Store/>
-    }
+      </>
+    );
 };
 
 export default SingleProduct;

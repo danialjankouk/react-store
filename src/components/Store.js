@@ -19,7 +19,7 @@ const Store = () => {
           <Product
             key={product.id}
             productData={product}
-            productId={product.id}
+            productId={product.id >4}
           />
         ))
       ) : (
