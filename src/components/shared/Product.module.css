@@ -4,7 +4,7 @@
   border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
-  margin: 0 10px 50px;
+  margin: 0 10px;
   transition: all 0.2s ease;
   text-align: center;
 }
@@ -17,7 +17,7 @@
 
 .cardImage {
   width: 230px;
-  height: 200px;
+  height: 300px;
   margin: 10px;
 }
 

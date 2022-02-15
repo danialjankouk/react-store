@@ -14,8 +14,8 @@ const Product = ({ productData }) => {
   const { state, dispatch } = useContext(CartContext);
 
   return (
-    <div style={{ minHeight: '100vh' }} classNamea={ styles.container}>
-      <img src={productData.image} alt="product" style={{ width: "200px" }} classNamea={ styles.cardImage}/>
+    <div style={{ minHeight: '100vh' }} className={ styles.container}>
+      <img src={productData.image} alt="product" style={{ width: "200px" }} className={ styles.cardImage}/>
       <h3>{shorten(productData.title)}</h3>
       <p>{productData.price}</p>
       <div className={styles.linkContainer}>
