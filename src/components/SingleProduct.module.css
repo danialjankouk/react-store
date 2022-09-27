@@ -1,95 +1,29 @@
-/* .container img {
-  width: 400px;
-  height: 400px;
-}
-.container {
-  margin: 5px 0;
-  background-color: #ddbea9;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 5px 5px 10px rgb(189, 189, 189);
-  height: 40rem;
-  width: 350px;
-}
-.container h3 {
-  color: #474745;
-  padding: 30px;
-}
-.container p {
-  margin: 0 25px 20px;
-  background-color: crimson;
-  width: fit-content;
-  padding: 5px;
-  border-radius: 5px;
-}
-.counter {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  padding: 25px;
-  margin: 25px;
-}
-.counter img,
-span {
-  position: relative;
-  width: fit-content;
-  bottom: 100px;
-  height: 10%;
-  left: 100%;
-  padding: 5px;
-}
-.counter .count {
-  background-color: crimson;
-  width: 5px;
-  height: 10px;
-  border-radius: 25%;
-  padding: 12px;
-  position: relative;
-  right: 30px;
-  font-weight: bold;
-  color: #fff;
-}
-.counter img:hover {
-  cursor: pointer;
-}
-.deactive {
-  opacity: 0.3;
-}
-.addButton {
-  display: flex;
-  color: black;
-  z-index: 10;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  position: relative;
-  top: 20px;
-  background-color: white;
-}
-.addButton:hover {
-  box-shadow: 5px 4px 5px crimson;
-  transition: all 0.5s ease-out;
-  background-color: white;
-}
-.detailLink{
-  display: flex;
-  color: #474745;
-  position: relative;
-  right: 17rem;
-  bottom: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  
-} */
 .container {
  width: 100%;
- height: 54rem;
- overflow-y: hidden;
- margin-left: 2rem;
-position: relative;
-bottom: 6rem;
+ padding: 30px;
+ display: flex;
+ justify-content: space-evenly;
+ color: pink;
+ margin-bottom: 5px;
+ background-color:#524A48 ;
 }
-.button{
-  border: none;
+.container button{
+  color: #524A48;
+  background-color: pink;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+}
+.container span{
+  padding-left:2px ;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }

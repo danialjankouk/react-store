@@ -15,3 +15,8 @@
 .love {
   color: crimson;
 }
+@media (max-width:768px) {
+  .footer{
+    font-size: 8px;
+  }
+}

@@ -13,13 +13,13 @@
   max-width: 100%;
 }
 .listContainer {
-  padding: 20px;
+  /* padding: 0 20px; */
 }
 .list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px 0px;
   color: #fff;
   list-style: none;
 }
@@ -43,6 +43,21 @@
   padding-left: 20px;
 }
 .shopCount{
-  color: #34a853;
+  color: crimson;
   font-weight: bold;
+}
+.hamburger_menu{
+  display: none;
+}
+.true{
+  display: flex;
+  flex-direction: column;
+}
+/* responsive */
+@media (max-width:768px) {
+  .header{
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
 }

@@ -6,8 +6,10 @@ class Banner extends Component {
     return (
       <div className={Styles.bannerContainer}>
         <img src={Background} alt="banner" />
-            <h1>Market Place</h1>
-            <p>into the future</p>
+        <div className={Styles.texts}>
+          <h1>Market Place</h1>
+          <p>into the future</p>
+        </div>
       </div>
     );
   }

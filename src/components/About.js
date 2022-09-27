@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import Styles from "../components/About.module.css";
-import xiaomi from "../assets/icons/Xiaomi.png";
-import apple from "../assets/icons/apple.png";
-import samsung from "../assets/icons/samsung.png";
+import cat from "../assets/icons/cat.png";
+import zara from "../assets/icons/zara.png";
+import gucci from "../assets/icons/gucci.png";
 class About extends Component {
   render() {
     return (
       <>
         <h1 className={Styles.support}>Who Supports Us?</h1>
         <div className={Styles.container}>
-          <img src={xiaomi} alt="xiaomi" />
-          <img src={apple} className={Styles.apple} alt="apple" />
-          <img src={samsung} alt="samsung" />
+          <img src={cat} alt="cat" className={Styles.zara} />
+          <img src={zara} className={Styles.zara} alt="zara" />
+          <img src={gucci} alt="gucci" className={Styles.zara} />
         </div>
       </>
     );

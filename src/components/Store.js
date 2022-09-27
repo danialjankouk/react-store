@@ -2,32 +2,24 @@ import React, { useContext } from "react";
 
 // Components
 import Product from "./shared/Product";
-import Loading from "../assets/icons/loading.gif"
-import styles from "./Store.module.css"
+
 // Context
 import { ProductsContext } from "../context/ProductContextProvider";
 
+// Style
+import styles from "./Store.module.css";
+import Load  from "../assets/icons/loading.gif";
 const Store = () => {
   const products = useContext(ProductsContext);
 
   return (
-    <div
-      className={styles.container}
-    >
-      {products.length ? (
+    <div className={styles.container}>
+      {Product.length ? (
         products.map((product) => (
-          <Product
-            key={product.id}
-            productData={product}
-            productId={product.id >4}
-          />
+          <Product key={product.id} productData={product} />
         ))
       ) : (
-        <img
-          src={Loading}
-          alt="loading"
-          style={{ marginLeft: "20rem" , marginBottom:"50rem"}}
-        />
+        <img src={Load} alt="loading" />
       )}
     </div>
   );

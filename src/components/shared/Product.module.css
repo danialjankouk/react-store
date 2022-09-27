@@ -4,7 +4,7 @@
   border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
-  margin: 0 10px;
+  margin: 0 10px 50px;
   transition: all 0.2s ease;
   text-align: center;
 }
@@ -17,7 +17,7 @@
 
 .cardImage {
   width: 230px;
-  height: 300px;
+  height: 200px;
   margin: 10px;
 }
 
@@ -85,7 +85,7 @@
   margin-left: 5px;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #34a853;
+  color: #1a73e8;
 }
 
 @media (max-width: 1000px) {

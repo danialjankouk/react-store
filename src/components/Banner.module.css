@@ -2,20 +2,37 @@
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .bannerContainer img {
-  width: 213.5vh;
+  width: 100%;
   max-height: 200vh;
 }
-.bannerContainer h1 {
-  position: relative;
-  bottom: 80rem;
-  left: 5rem;
+.texts{
+  display: flex;
+  position: absolute;
+  bottom: 30%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+.texts h1{
   font-size: 6rem;
   color: #474745;
 }
-.bannerContainer p{
-    position: relative;
-    bottom: 78rem;
-    left: 5rem;
+.texts p{
     font-size: 3rem;
     color: crimson;
+}
+@media (max-width:768px) {
+  .bannerContainer img{
+    min-height: 70vh;
+  }
+ .texts h1{
+    font-size: 3rem;
+  }
+ .texts p{
+    font-size: 2rem;
+  }
+  .texts{
+    position: absolute;
+    bottom: 70%;
+  }
 }
